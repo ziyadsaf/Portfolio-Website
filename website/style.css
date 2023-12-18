@@ -10,10 +10,20 @@ html {
     
 }
 body, section {
-    background-color: #1d1d1d; /* Set your desired background color */
+    background-color: #1d1d1d; 
 }
-/* Navbar styles */
 
+/* Header Styles for each page */
+
+.about_text, .portfolio_text, .blog_text, .contact_text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #DDD0C8;
+    padding: 50px 0px 50px 0px;
+}
+
+/* Navbar styles */
 .navbar {
     background-color: #1d1d1d;
 
@@ -110,45 +120,43 @@ body, section {
 
 /* About page styling */
 #about {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto Sans';
 }
 
-.about_text {
-    display: flex;
+.about_content {
+    display:flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.section_heading {
-    align-items: center;
-    color:#DDD0C8;
-    padding: 10px;
+.about_img_desc {
+    display: flex;
+    flex-direction: row;
 }
+
 .about_img > img {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height:100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    flex-shrink: 0;
     padding: 10px;
-    border-radius:100px;
+    border-radius: 100px;
 }
-
 .about_desc > p {
     color:#DDD0C8;
-    font-size: 22px;
-    padding: 50px;
-    
+    font-size: 24px;
+    padding: 150px;
 }
 
 /* List styling for about page */
 .about_languages {
     color: #DDD0C8;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style-position: inside;
+    padding: 50px 0 50px 0;
     
 }
 
@@ -159,6 +167,8 @@ body, section {
 
 .about_languages li {
     padding-left: 0.5ch;
+    font-size: 20px;
+    padding: 5px;
 
 }
 .languages_list {
@@ -171,17 +181,62 @@ body, section {
 }
  /* Portfolio page styling */
 
- .portfolio_text {
+ #portfolio {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: #DDD0C8
+    
+ }
+
+ .portfolio_text h1{
+    margin-bottom: 10px;
+    
+ }
+ .portfolio_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+    margin: 0 auto;
+    grid-gap: 100px;
+    
+  }
+  .grid-item {
+    background-color: #DDD0C8; 
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    width: 400px;
+    height: auto;
+   
+  }
+
+  .grid_img > img {
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+/* Blog page styling */
+
+#blog {
+    display: flex;
+    flex-direction: column;
 }
 /* Contact page styling */
 
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_text h1{
+    margin-bottom: 10px;
+}
 .form-group {
-    margin: 0 750px 0 750px;
-    
+    margin: 0 10% 0 10%;
 }
 
 .form-control {
