@@ -121,6 +121,18 @@ body, section{
     align-items: center;
 }
 
+
+.about_middle {
+    color:#DDD0C8;
+    font-size: 24px;
+    margin-left: 350px;
+    font-weight: bold;
+}
+
+.about_text {
+    padding-bottom: 50px;
+}
+
 .about_content {
     display:flex;
     flex-direction: column;
@@ -135,17 +147,23 @@ body, section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 400px;
+    width: 450px;
     flex-shrink: 0;
-    padding: 10px;
-    border-radius: 100px;
+    padding: 25px;
+    border-radius: 50px;
 }
-.about_desc p {
+
+#about_para{
     color:#DDD0C8;
     font-size: 24px;
-    padding: 50px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 100px;
+
     
 } 
+
 
 
 /* List styling for about page */
@@ -154,7 +172,7 @@ body, section{
     display:flex;
     justify-content: center;
     list-style-position: inside;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 50px 0;
     
 }
 
