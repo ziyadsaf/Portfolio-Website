@@ -131,7 +131,7 @@ body, section{
 #about_para{
 	color:#DDD0C8;
 	font-size: 24px;
-	text-align: justify;
+	text-align: left;
 	margin-top: 50px;
 	margin-right: 200px;
 	margin-left: 100px;
