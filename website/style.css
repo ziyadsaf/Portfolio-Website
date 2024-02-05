@@ -225,3 +225,18 @@ label {
 .button:hover {
 	color: #F5F5F5;
 }
+* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #DDD0C8;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#fff;
+    -webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.5);
+}
