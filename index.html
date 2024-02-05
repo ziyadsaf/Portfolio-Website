@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+        <!-- CSS-->
+        <link rel="stylesheet" href="/website/style.css">
+        <title>Ziyad's Portfolio</title>
+    </head>
+    <body>
+       
+         <!-- Nav bar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+            <!-- Nav bar heading -->
+            <a class="navbar-brand" href="./index.html">Ziyad Safouane</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <!-- Nav bar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- main banner -->
+      <section id="home" class="hero" >
+          <div class= "hero-text">
+              <h1 class="hero_title">Ziyad</h1>
+              <h2 class="hero_desc">An aspiring software engineer</h2>
+              <a href="#about" class="hero_link">Enter my world...</a>
+          </div>
+          </div>
+      </div>
+      </section>
+
+      <section class = "container-fluid" id="about">
+        <div class="main_heading">
+          <h1>About Me</h1>
+        </div>
+        <div class = "container" id="about_container">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="about_img">
+                  <img src="/images/selfie.jpg"/>
+                </div>
+              </div>
+        <div class = "col-md-3">
+          <div class="about_desc">
+          <h4 id="about_desc_heading">Welcome to my portfolio!</h4>
+          <p>I am currently a 25 year old Computer Science teacher looking to move into a career in software engineering. I have a keen interest in creating ideas and turning them into functioning applications or websites.</p>
+          <p>I became motivated to transition into a more technical role as I have a First-Class BSc in Computing and I have always loved to challenge myself to create code and solve problems computationally.</p>
+          <p>I am actively learning and improving my knowledge and skills in all the languages listed, whilst also working on some projects that really interest me; showcased below...</p>
+        </div>
+      </div>
+              
+
+        <div class="col-md-2">
+          <div class="about_languages">
+            <ul class="languages_list">
+              <h3>Proficient Languages</h3>
+              <li>Python</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <ul class="frameworks_list">
+              <h3>Proficient Frameworks</h3>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>React</li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+      </div>
+      </section>
+      <hr/>
+      <section id = "portfolio" class = "container">
+        <div class="main_heading">
+          <h1>My Portfolio</h1>
+        </div>
+       
+        <div id="portfolio_carousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quiz Card App"></button>
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="1" aria-label="carousel-music"></button>
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="2" aria-label="carousel-ldr"></button>
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="3" aria-label="carousel-ldr"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="carousel-quiz">
+            <a target=_blank href="https://github.com/ziyadsaf/Quiz-Card">
+              <img class="d-block w-100" src="/images/quiz-card.png" alt="Quiz Card">
+            </a>
+              <div class="position-relative text-center">
+                <h5>Quiz Card</h5>
+                <p>Some representative placeholder</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="carousel-music">
+            <a target=_blank href="https://github.com/ziyadsaf/Favourite-Music">
+              <img class="d-block w-100" src="/images/fav-music.png" alt="Favourite Music">
+            </a>
+              <div class="position-relative text-center">
+                <h5>Favourite Music</h5>
+                <p>Some representative placeholder </p>
+              </div>
+            </div>
+            <div class="carousel-item" id="carousel-ldr">
+            <a target=_blank href="https://github.com/ziyadsaf/Long-Distance-Relationship-App">
+              <img class="d-block w-100" src="/images/ldr.png" alt="LDR">
+            </a>
+              <div class="position-relative text-center">
+                <h5>LDR</h5>
+                <p>Some representative placeholder </p>
+              </div>
+            </div>
+            <div class="carousel-item" id="carousel-discount">
+            <a target=_blank href="https://github.com/ziyadsaf/Discount-Tracker">
+              <img class="d-block w-100" src="/images/discount.png" alt="Discount Tracker">
+            </a>
+              <div class="position-relative text-center">
+                <h5>Discount Tracker</h5>
+                <p>Some representative placeholder </p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolio_carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolio_carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          
+          </div>
+          </div>
+        </div>
+  
+          </div>
+        </div>
+      </section>
+      <!-- <section id="blog">
+        <div class="blog_text">
+          <h1>Blog</h1>
+        </div> -->
+        <hr/>
+      <section class = "container-fluid" id="contact">
+        <div class="main_heading">
+        <h1>Contact Me</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="forename">Forename</label>
+            <input type="text" class="form-control" id="forename" placeholder="Enter your first name">
+          </div>
+          <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="password" class="form-control" id="surname" placeholder="Enter your surname">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email address">
+          </div>
+          <div class="form-group">
+            <label for="textarea">Query</label>
+            <textarea class="form-control" id="textarea" placeholder="Ask away!"></textarea>
+          </div>
+          <div class="form-group">
+          <button type="submit" class="button">Submit</button>
+          </div>
+        </form>
+      </section>
+
+
+   <!--Bootstrap JS-->
+   
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="./script.js"></script>
+      </body>
+</html>
