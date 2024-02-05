@@ -3,6 +3,7 @@ html,body {
 	font-family: 'Roboto Sans','Open Sans';
 	font-size:18px;
 	color: #DDD0C8;
+	overflow-x: hidden;
 }
 body, section{
 	background-color: #1d1d1d;
@@ -122,21 +123,21 @@ hr {
 .about_img > img {
 	width: 450px;
 	border-radius: 50px;
-
 }
 
 .about_desc {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	left: 43%;
+	left: 47%;
 	font-size: 1.1rem;
 	text-align: center;
 	
 }
 
 .about_desc > p {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
+
 }
 
 #about_desc_heading {
@@ -148,8 +149,8 @@ hr {
 	display:flex;
 	list-style-position: inside;
 	position: relative;
-	left: 100%;
-	margin-top: 100px;
+	left: 80%;
+	margin-top: 150px;
 }
 .about_languages li::marker {
 	content: "👨‍💻";
