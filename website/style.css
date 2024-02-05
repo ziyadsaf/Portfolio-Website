@@ -112,6 +112,11 @@ hr {
 #about_container {
 	margin: 0 0 0 0;
 }
+
+#about_desc_heading {
+	text-align: center;
+	margin-bottom: 50px;
+}
  
 .main_heading {
 	display: flex;
@@ -121,15 +126,16 @@ hr {
 }
 /* About page styling */
 .about_img > img {
-	width: 450px;
+	width: 350px;
 	border-radius: 50px;
+	margin-top: 100px;
 }
 
 .about_desc {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	left: 47%;
+	left: 40%;
 	font-size: 1.1rem;
 	text-align: center;
 	
@@ -137,19 +143,17 @@ hr {
 
 .about_desc > p {
 	margin-bottom: 25px;
+	line-height: 1.5;
 
 }
 
-#about_desc_heading {
-	text-align: center;
-	margin-bottom: 50px;
-}
+
 /* List styling for about page */
 .about_languages {
 	display:flex;
 	list-style-position: inside;
 	position: relative;
-	left: 80%;
+	left: 85%;
 	margin-top: 150px;
 }
 .about_languages li::marker {
@@ -224,4 +228,21 @@ label {
 }
 .button:hover {
 	color: #F5F5F5;
+}
+
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #DDD0C8;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#fff;
+    -webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.5);
 }
