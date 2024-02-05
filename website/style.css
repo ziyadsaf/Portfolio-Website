@@ -225,7 +225,7 @@ label {
 .button:hover {
 	color: #F5F5F5;
 }
-* Scroll bar */
+/* Scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -239,4 +239,20 @@ label {
     border-radius: 10px;
     background-color:#fff;
     -webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.5);
+}
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .about_desc {
+        left: 0; /* Center the text on smaller screens */
+        max-width: 90%; /* Allow more text per line on smaller screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .about_desc {
+        left: 0; /* Center the text on mobile screens */
+        max-width: 100%; /* Full width on mobile screens */
+    }
 }
