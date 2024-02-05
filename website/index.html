@@ -3,10 +3,12 @@
     <head lang="en">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
         <!-- CSS-->
         <link rel="stylesheet" href="/website/style.css">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>Ziyad's Portfolio</title>
     </head>
     <body>
@@ -40,7 +42,7 @@
             </div>
           </nav>
         <!-- main banner -->
-      <section class="hero" id="home">
+      <section id="home" class="hero" >
           <div class= "hero-text">
               <h1 class="hero_title">Ziyad</h1>
               <h2 class="hero_desc">An aspiring software engineer</h2>
@@ -49,100 +51,123 @@
           </div>
       </div>
       </section>
-      <section id="about">
-      <div class="about_content">
-        <div class="about_text">
-          <h1>About Me!</h1>
+
+      <section class = "container-fluid" id="about">
+        <div class="main_heading">
+          <h1>About Me</h1>
         </div>
-        <div class="about_img_desc">
-        <div class="about_img">
-          <img src="/images/selfie.jpg"/>
-        </div>
-        <div class="about_desc">
-          <p class="about_middle">Welcome to my portfolio!</p>
-          <p id="about_para">I am currently a Computer Science teacher looking to move into a career in software engineering. I have a keen interest in creating ideas and turning them into functioning applications or websites.</p>
-          <p id="about_para">I became motivated to transition into a more technical role as my degree is in Computing and I have always loved to challenge myself to create code and solve problems computationally.</p>
-          <p id="about_para">I am actively learning and improving my knowledge and skills in all the languages listed below, whilst also working on three projects that really interest me; also showcased below...</p>
+        <div class = "container" id="about_container">
+          <div class="row">
+              <div class="col-md-5">
+                <div class="about_img">
+                  <img src="/images/selfie.jpg"/>
+                </div>
+              </div>
+        <div class = "col-md-4">
+          <div class="about_desc">
+          <h4 id="about_desc_heading">Welcome to my portfolio!</h4>
+          <p>I am currently a 25 year old Computer Science teacher looking to move into a career in software engineering. I have a keen interest in creating ideas and turning them into functioning applications or websites.</p>
+          <p>I became motivated to transition into a more technical role as I have a First-Class BSc in Computing and I have always loved to challenge myself to create code and solve problems computationally.</p>
+          <p>I am actively learning and improving my knowledge and skills in all the languages listed, whilst also working on some projects that really interest me; showcased below...</p>
         </div>
       </div>
-        <div class="about_languages">
-          <ul class="languages_list">
-            <h3>Proficient Languages</h3>
-            <li>Python</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <ul class="frameworks_list">
-            <h3>Proficient Frameworks</h3>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>React</li>
-          </ul>
+              
+
+        <div class="col-md-3">
+          <div class="about_languages">
+            <ul class="languages_list">
+              <h3>Proficient Languages</h3>
+              <li>Python</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <ul class="frameworks_list">
+              <h3>Proficient Frameworks</h3>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>React</li>
+            </ul>
+          </div>
         </div>
+      </div>  
       </div>
       </section>
-      <section id="portfolio">
-        <div class="portfolio_text">
+      <hr/>
+      <section id = "portfolio" class = "container">
+        <div class="main_heading">
           <h1>My Portfolio</h1>
         </div>
-      <div class="portfolio_grid">
-        <div class="grid-item">
-          Quiz-Card
-          <div class="grid_img">
-          <a target=_blank href="https://github.com/ziyadsaf/Quiz-Card">
-            <img src="/images/quiz.jpg" alt="Quiz App">
-          </a>
-          <p>An app that allows you to import a quiz, take the quiz and it will generate flashcards from your incorrect questions. As a Computer Science teacher, I often give my students quizzes or mini-tests to test their understanding. I often found that it was quite a monotonous task getting them to take note of their wrong answers. It also became apparent they would never learn from their wrong answers as they never looked at them again!
-
-            So I decided that I would build an application where you create a custom quiz and it will create flashcards from any incorrect questions. This would solve the problem of students not being able to "store" their wrong answers and provides them with a more interactive way to learn from their mistakes.</p>
+       
+        <div id="portfolio_carousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Quiz Card App"></button>
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="1" aria-label="carousel-music"></button>
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="2" aria-label="carousel-ldr"></button>
+            <button type="button" data-bs-target="#portfolio_carousel" data-bs-slide-to="3" aria-label="carousel-ldr"></button>
           </div>
-        </div>
-        <div class="grid-item">
-          Favourite Music App
-          <div class="grid_img">
-            <a target=_blank href="https://github.com/ziyadsaf/Favourite-Music">
-              <img src="\images\music.jpg" alt="Favourite Music App">
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="carousel-quiz">
+            <a target=_blank href="https://github.com/ziyadsaf/Quiz-Card">
+              <img class="d-block w-100" src="/images/quiz-card.png" alt="Quiz Card">
             </a>
-              <p>An app that generates a graphic of your favourite artists, albums and songs. I use Spotify everyday and love to find out what my most played songs or albums are. There are already apps that can do this but I want to create one that generates a graphic that you can share on social media with your favourite artists, albums and songs. I've always wanted to create an application that uses the Spotify API as well!</p>
-
-            </div>
-        </div>
-        <div class="grid-item">
-          Long Distance Relationship App
-          <div class="grid_img">
-            <a href="https://github.com/ziyadsaf/Long-Distance-Relationship-App">
-              <img src="\images\ldrimage.jpg" alt="Long Distance Relationship App">
-            </a>
-              <p>An app that allows couples to interact and play mini games with each other. The target audience is couples in long distance relationships.
-
-                I am in a long distance relationship myself and recognise the struggles it can present, especially if one/both of the people involved have limited access to technology such as consoles/laptops etc. This app aims to solve that problem with the use of just your smartphone.
-                
-                It will involve being able to communicate in a unique way, play games with each other on a single app, send reminders to each other and be able to share a calendar together. These are just the preliminary features.</p>
-
-            </div>
-          </div>
-          <div class="grid-item">
-            Discount Tracker
-            <div class="grid_img">
-              <a href="https://github.com/ziyadsaf/Discount-Tracker">
-                <img src="\images\discount.png" alt="Discount Tracker App">
-              </a>
-                <p>An application that uses web scraping to track price changes of products from an online grocery store such as Sainsburys. </p>
+              <div class="position-relative text-center">
+                <h5>Quiz Card</h5>
+                <p>Some representative placeholder</p>
               </div>
+            </div>
+            <div class="carousel-item" id="carousel-music">
+            <a target=_blank href="https://github.com/ziyadsaf/Favourite-Music">
+              <img class="d-block w-100" src="/images/fav-music.png" alt="Favourite Music">
+            </a>
+              <div class="position-relative text-center">
+                <h5>Favourite Music</h5>
+                <p>Some representative placeholder </p>
+              </div>
+            </div>
+            <div class="carousel-item" id="carousel-ldr">
+            <a target=_blank href="https://github.com/ziyadsaf/Long-Distance-Relationship-App">
+              <img class="d-block w-100" src="/images/ldr.png" alt="LDR">
+            </a>
+              <div class="position-relative text-center">
+                <h5>LDR</h5>
+                <p>Some representative placeholder </p>
+              </div>
+            </div>
+            <div class="carousel-item" id="carousel-discount">
+            <a target=_blank href="https://github.com/ziyadsaf/Discount-Tracker">
+              <img class="d-block w-100" src="/images/discount.png" alt="Discount Tracker">
+            </a>
+              <div class="position-relative text-center">
+                <h5>Discount Tracker</h5>
+                <p>Some representative placeholder </p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolio_carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolio_carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          
+          </div>
+          </div>
         </div>
-
-      </div>
+  
+          </div>
+        </div>
       </section>
       <!-- <section id="blog">
         <div class="blog_text">
           <h1>Blog</h1>
         </div> -->
-      </section>
-      <section id="contact">
-        <div class="contact_text">
+        <hr/>
+      <section class = "container-fluid" id="contact">
+        <div class="main_heading">
         <h1>Contact Me</h1>
         </div>
         <form>
@@ -170,6 +195,10 @@
 
 
    <!--Bootstrap JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="./script.js"></script>
       </body>
 </html>
