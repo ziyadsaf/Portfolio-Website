@@ -1,6 +1,6 @@
 /* Styles for webpage */
 html,body {
-	font-family: 'Roboto Sans','Open Sans';
+	font-family: 'Futura','Open Sans';
 	font-size:18px;
 	color: #DDD0C8;
 	overflow-x: hidden;
@@ -151,8 +151,7 @@ hr {
 .about_languages {
 	display:flex;
 	list-style-position: inside;
-	position: relative;
-	left: 100%;
+	justify-content: center;
 	margin-top: 100px;
 }
 .about_languages li::marker {
